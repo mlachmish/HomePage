@@ -25,13 +25,13 @@
 
         <div class="contact-content center">
             <h2 class="contact-subtitle">SEND ME A NOTE</h2>
-            <form id="contact-form" method="POST" action="https://formspree.io/matanlachmish@gmail.com">
-                <input type="text" name="name" placeholder="Your name">
-                <input type="email" name="_replyto" placeholder="Your email">
+            <form id="contact-form">
+                <input id="contact-name" type="text" name="name" placeholder="Your name">
+                <input id="contact-email" type="email" name="_replyto" placeholder="Your email">
                 <input type="hidden" name="_subject" value="Website contact" />
-                <textarea name="message" placeholder="Your message"></textarea>
+                <textarea id="contact-message" name="message" placeholder="Your message"></textarea>
                 <input type="text" name="_gotcha" style="display:none" />
-                <input class="contact-content-send-button" type="submit" value="Send">
+                <input class="contact-content-send-button" type="submit" value="Send" (click)="sendMessage()">
             </form>
         </div>
 

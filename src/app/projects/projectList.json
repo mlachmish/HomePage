@@ -18,7 +18,7 @@
     "title": "Music Genre Classification",
     "logo": "../img/projects/musicGenereClassification.png",
     "text": "Classify music genre from a 10 second sound stream using a Neural Network.",
-    "link": ""
+    "link": "https://github.com/mlachmish/MusicGenreClassification"
   },
   {
     "key": "localizedstringsgenerator",

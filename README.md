@@ -6,7 +6,8 @@ You can find it in www.thebigfatninja.xyz
 
 ## Technologies used in this project
 Web stack: Angular 2, TypeScript, Yeoman, Gulp, webpack, Sass, TSLint<br>
-Hosting: Firebase
+Hosting: Firebase<br>
+CI: Travis
 
 ## How to build
 ```bash

@@ -1,0 +1,15 @@
+<div class="projects-container">
+
+    <div class="about-title-component">
+        <div class="line-decorator"></div>
+        <h1 class="about-title">PROJECTS</h1>
+        <div class="line-decorator"></div>
+    </div>
+
+    <h2 class="project-h2">
+        Here are a snippet of my latest projects
+    </h2>
+    <div class="projects">
+        <Project *ngFor="let project of projects" [project]="project"></Project>
+    </div>
+</div>

@@ -5,8 +5,8 @@ This is the code for my portoflio web page.
 You can find it in www.thebigfatninja.xyz
 
 ## Technologies used in this project
-Hosting: Firebase
 Web stack: Angular 2, TypeScript, Yeoman, Gulp, webpack, Sass, TSLint
+Hosting: Firebase
 
 ## How to build
 ```bash

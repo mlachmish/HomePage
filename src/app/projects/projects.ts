@@ -12,6 +12,7 @@ export class Project {
         public logo: string,
         public title: string,
         public text: string,
+        public tag: string,
         public link: string
     ) {}
 }

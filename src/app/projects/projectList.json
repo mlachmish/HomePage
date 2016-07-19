@@ -4,6 +4,7 @@
     "title": "Cryptography",
     "logo": "../img/projects/cryptography.png",
     "text": "A modern cryptography library in Swift.",
+    "tag": "Swift",
     "link": "https://github.com/mlachmish/Cryptography"
   },
   {
@@ -11,6 +12,7 @@
     "title": "TSOBOunder",
     "logo": "../img/projects/TSOBounder.png",
     "text": "Reaserch on a way to bound the CPU's store buffer size.",
+    "tag": "Python",
     "link": "https://github.com/mlachmish/TSOBounder"
   },
   {
@@ -18,6 +20,7 @@
     "title": "Music Genre Classification",
     "logo": "../img/projects/musicGenereClassification.png",
     "text": "Classify music genre from a 10 second sound stream using a Neural Network.",
+    "tag": "Machine Learning",
     "link": "https://github.com/mlachmish/MusicGenreClassification"
   },
   {
@@ -25,6 +28,7 @@
     "title": "Localized Strings Generator",
     "logo": "../img/projects/language.png",
     "text": "Generate '.strings' with long gibberish strings in order to test if your app is ready for translation.",
+    "tag": "Python",
     "link": "https://github.com/mlachmish/localizedStringsGenerator"
   }
 ]

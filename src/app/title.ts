@@ -5,43 +5,48 @@ import {Component} from '@angular/core';
   template: require('./title.html')
 })
 export class Title {
-    linkedinLogoWhite: string = '../img/social/white/linkedin-logo.png';
-    linkedinLogoColor: string = '../img/social/color/linkedin-logo.png';
+    private linkedinLogoWhite: string = '../img/social/white/linkedin-logo.png';
+    private linkedinLogoColor: string = '../img/social/color/linkedin-logo.png';
 
-    githubLogoWhite: string = '../img/social/white/github-logo.png';
-    githubLogoColor: string = '../img/social/color/github-logo.png';
+    private githubLogoWhite: string = '../img/social/white/github-logo.png';
+    private githubLogoColor: string = '../img/social/color/github-logo.png';
 
-    facebookLogoWhite: string = '../img/social/white/facebook-logo.png';
-    facebookLogoColor: string = '../img/social/color/facebook-logo.png';
+    private facebookLogoWhite: string = '../img/social/white/facebook-logo.png';
+    private facebookLogoColor: string = '../img/social/color/facebook-logo.png';
 
-    twitterLogoWhite: string = '../img/social/white/twitter-logo.png';
-    twitterLogoColor: string = '../img/social/color/twitter-logo.png';
+    private twitterLogoWhite: string = '../img/social/white/twitter-logo.png';
+    private twitterLogoColor: string = '../img/social/color/twitter-logo.png';
 
-    mouseOverLinkedin() {
-        (<HTMLImageElement>document.getElementById('linkedin-logo')).src = this.linkedinLogoColor;
+    public linkedinLogo: string = this.linkedinLogoWhite;
+    public githubLogo: string = this.githubLogoWhite;
+    public facebookLogo: string = this.facebookLogoWhite;
+    public twitterLogo: string = this.twitterLogoWhite;
+
+    private mouseOverLinkedin() {
+        this.linkedinLogo = this.linkedinLogoColor;
     };
-    mouseOutLinkedin() {
-        (<HTMLImageElement>document.getElementById('linkedin-logo')).src = this.linkedinLogoWhite;
-    };
-
-    mouseOverGithub() {
-        (<HTMLImageElement>document.getElementById('github-logo')).src = this.githubLogoColor;
-    };
-    mouseOutGithub() {
-        (<HTMLImageElement>document.getElementById('github-logo')).src = this.githubLogoWhite;
+    private mouseOutLinkedin() {
+        this.linkedinLogo = this.linkedinLogoWhite;
     };
 
-    mouseOverFacebook() {
-        (<HTMLImageElement>document.getElementById('facebook-logo')).src = this.facebookLogoColor;
+    private mouseOverGithub() {
+        this.githubLogo = this.githubLogoColor;
     };
-    mouseOutFacebook() {
-        (<HTMLImageElement>document.getElementById('facebook-logo')).src = this.facebookLogoWhite;
+    private mouseOutGithub() {
+        this.githubLogo = this.githubLogoWhite;
     };
 
-    mouseOverTwitter() {
-        (<HTMLImageElement>document.getElementById('twitter-logo')).src = this.twitterLogoColor;
+    private mouseOverFacebook() {
+        this.facebookLogo = this.facebookLogoColor;
     };
-    mouseOutTwitter() {
-        (<HTMLImageElement>document.getElementById('twitter-logo')).src = this.twitterLogoWhite;
+    private mouseOutFacebook() {
+        this.facebookLogo = this.facebookLogoWhite;
+    };
+
+    private mouseOverTwitter() {
+        this.twitterLogo = this.twitterLogoColor;
+    };
+    private mouseOutTwitter() {
+        this.twitterLogo = this.twitterLogoWhite;
     };
 }

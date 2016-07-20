@@ -19,6 +19,9 @@ export class Contact {
     private githubLogoWhite: string = '../img/social/white/github-logo.png';
     private githubLogoColor: string = '../img/social/color/github-logo.png';
 
+    private stackoverflowWhite: string = '../img/social/white/stackoverflow-logo.png'
+    private stackoverflowColor: string = '../img/social/color/stackoverflow-logo.png'
+
     private facebookLogoWhite: string = '../img/social/white/facebook-logo.png';
     private facebookLogoColor: string = '../img/social/color/facebook-logo.png';
 
@@ -27,6 +30,7 @@ export class Contact {
 
     public linkedinLogo: string = this.linkedinLogoWhite;
     public githubLogo: string = this.githubLogoWhite;
+    public stackoverflowLogo: string = this.stackoverflowWhite;
     public facebookLogo: string = this.facebookLogoWhite;
     public twitterLogo: string = this.twitterLogoWhite;
 
@@ -42,6 +46,13 @@ export class Contact {
     };
     private mouseOutGithub() {
         this.githubLogo = this.githubLogoWhite;
+    };
+
+    private mouseOverStackoverflow() {
+        this.stackoverflowLogo = this.stackoverflowColor;
+    };
+    private mouseOutStackoverflow() {
+        this.stackoverflowLogo = this.stackoverflowWhite;
     };
 
     private mouseOverFacebook() {

@@ -25,7 +25,7 @@
   },
   {
     "key": "gibberish",
-    "title": "Localized Strings Generator",
+    "title": "gibberish",
     "logo": "../img/projects/language.png",
     "text": "gibberish is a tool for iOS developer that help test your application UI befor sending it to translation. ",
     "tag": "Python",

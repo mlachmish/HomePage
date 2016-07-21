@@ -24,10 +24,10 @@
     "link": "https://github.com/mlachmish/MusicGenreClassification"
   },
   {
-    "key": "localizedstringsgenerator",
+    "key": "gibberish",
     "title": "Localized Strings Generator",
     "logo": "../img/projects/language.png",
-    "text": "Generate '.strings' with long gibberish strings in order to test if your app is ready for translation.",
+    "text": "gibberish is a tool for iOS developer that help test your application UI befor sending it to translation. ",
     "tag": "Python",
     "link": "https://github.com/mlachmish/localizedStringsGenerator"
   }

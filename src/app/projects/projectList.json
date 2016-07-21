@@ -26,9 +26,9 @@
   {
     "key": "gibberish",
     "title": "gibberish",
-    "logo": "../img/projects/language.png",
+    "logo": "../img/projects/gibberish.png",
     "text": "gibberish is a tool for iOS developer that help test your application UI befor sending it to translation. ",
     "tag": "Python",
-    "link": "https://github.com/mlachmish/localizedStringsGenerator"
+    "link": "https://github.com/mlachmish/gibberish"
   }
 ]

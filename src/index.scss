@@ -110,7 +110,7 @@ $title-txt-color: #e8634e;
   border-bottom-width: 3px;
   border-bottom-style: solid;
 }
-.about-cv-button {
+button {
   position: relative;
   display: table;
   margin: auto;
@@ -297,9 +297,8 @@ textarea {
   margin-bottom: 1rem;
   border: 0;
   color: #E8634E;
-  cursor: pointer;
   background-color: rgba(255, 255, 255, 1);
-  font: normal normal normal 17px/1.4em 'Josefin Slab',serif;
+  letter-spacing: normal;
 }
 
 //Footer

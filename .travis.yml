@@ -7,16 +7,13 @@ node_js:
 - 5.1.0
 before_install:
 - npm i -g npm@^3.0.0
+- npm i -g firebase-tools
 before_script:
 - npm prune
 script:
 - npm run build
 after_success:
-deploy:
-  provider: heroku
-  api_key:
-    secure: esEadT8QL/GWDrltqi6/d4e3BLR4mUHu9U+dgmNz9hsSiYH2eM9us55hRdOpQOZI/ROTGMbOdXNKSpiiK7Mn0/SHNCbN23wriOd0V1c2kfFgudHlXq8ADdrPZS/VNS4L0sBiVo5X/+LTOKAgKbmyk/xQ0w8GciAvHWLr26+sESzZ6i4dRrXJaRLA+td58v6FR5mRV1TqLa3fd5jeSAfKWGF2CncacTyx25M0/Eaio1/MwPVE/IIs7XGTtu+1eT7LQqLIcO30Fd8JBHn7hW+6sYg7gI1I40i9Q7Z6paHvd6H5o/IMidHfsB4BFm1qIOlANfnlFCDkfhQl6PQQBEhHBtB3s9gRioSGiCrHr1aeFmnsw/BDdcxkMaUT0scjQcVJnSCiz0LgrvjeqI6zyQ3Rj/gW2hEabQPsiU/1/G4EjgCNfb0FiahDg2WcXtV99spjSrOt1allukkYuu9xackF5Gzt2bDZ2a244V06fm+vXrVLnxwPD5/bjo0uS2sMnM7CrK7atONAb9nr1fi1i1cNyJOgEKPVkHkZ0Tc2JwyxsOq9cCt/7ES54wRWToK1fE5jRmRbA3yjrgzXqCsSbbFBrx6UIor7sjVphoWq9yVQ8sJSl9jhF2XTPNZjZdMTHpdBYvaTUUCDhiinVRvOBx8qFjA5WlMDx3wlujGSguGCqKc=
-    app: thebigfatninja-homepage
+- firebase deploy --token ${FIREBASE_TOKEN} --project ${FIREBASE_PROJECT}
 notifications:
   email:
     on_failure: always

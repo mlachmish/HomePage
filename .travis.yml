@@ -7,13 +7,13 @@ node_js:
 - 5.1.0
 before_install:
 - npm i -g npm@^3.0.0
-- npm i -g firebase-tools
+#- npm i -g firebase-tools
 before_script:
 - npm prune
 script:
 - npm run build
 after_success:
-- firebase deploy --token ${FIREBASE_TOKEN} --project ${FIREBASE_PROJECT}
+#- firebase deploy --token ${FIREBASE_TOKEN} --project ${FIREBASE_PROJECT}
 - cd dist
 deploy:
   provider: heroku

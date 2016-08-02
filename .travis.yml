@@ -18,6 +18,7 @@ deploy:
   api_key:
     secure: YlXxyyln8chb3vdPoWkYGqL5mE4YDHuVxZcr8PqlLnO8wZFMnwbF0pv4Zy6Y4mQZr1EPwo+EAi2BLXKBiVweab+OWEy+rHlgOJEFzmKYMXs1iYNVlQRTSz832WFMItTGrhmV9yIXIx/wnBCKjeN3tDNkwTx7o/STdndfzmv/C7ulcFLDXvVPQR/dNM0OaotAh2T4oESC7WCUgNsWJ04aAEyvDxnL/rlP/1QUiW/kURuiINE6XNSFY9h0TRB95CRvkYC9y20O+3eBvhtzcUpYQHyJek+6M/B0oqDNQEe/Cd3ylgntd50210oPokIYUEmzQ/z61vc7Rg/RXGsNbZvljXbhEXe6pTr9H+8HdMcx0BQrhi6kPvb+t+6tZ13jEcQo/msJ+UY4aGPrNmbbE+v+sqBtz2vmp1vO3n9k+gMQ8JMgD5lPCVYOZMlb37CEzRuEIX5yLcmBOtFzwul9bteepwJhfK2/hJMLifDvFcF+AaySYLnfbJaWd0ZvfOdEe3krffLBprDGjOFnsg6G9Fr+Iy5cyCgyTJ4DajYU82nWervk1tFrH/J5IzhlniEvR8gZ4/+VvIMGIWqCXSm7GF8AczZZosoj7VpIjbd4Pr9cAXTmCPL4fejHIklK9Gv6h1MmWyEEqhuQ/mZhMk0EMFWptad6IWKyv+3/xfDSbUMykhk=
   app: thebigfatninja-homepage
+  skip_cleanup: true
 notifications:
   email:
     on_failure: always

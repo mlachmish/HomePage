@@ -2,15 +2,24 @@ sudo: false
 language: node_js
 cache:
   directories:
-    - node_modules
+  - node_modules
 node_js:
-  - "5.1.0"
+- 5.1.0
 before_install:
-  - npm i -g npm@^3.0.0
-  - npm i -g firebase-tools
+- npm i -g npm@^3.0.0
+- npm i -g firebase-tools
 before_script:
-  - npm prune
+- npm prune
 script:
-  - npm run build
+- npm run build
 after_success:
-  - firebase deploy --token ${FIREBASE_TOKEN} --project ${FIREBASE_PROJECT}
+- firebase deploy --token ${FIREBASE_TOKEN} --project ${FIREBASE_PROJECT}
+- cd dist
+deploy:
+  provider: heroku
+  api_key:
+    app: thebigfatninja-homepage
+    secure: KdRVtt5ohfRL1LlSuZiEpQRGhs619Q/rbYtajY7tjg13PCv8RRhdG/PT0pZSI9xSt4Xy0Kq2gKduV3jyeTeoTpHvADMV4nUcFQhTtj5qHKiM1jCaqZUs1sHFCMpcct/ifBuLmhwRaQc+HpYyH0yQnwXLt1etPqBRicV/tWL9SDR0Zp/tlbrb+IMUa1JJRTOd++A5ogRmguqnFLFiozcI/mJtWzoQhLgMSBwSKlTT/yUM2LY8rhUr8Vbj1qzCyqWZPeBXDb5v+OOtvHfLOfr6DvobsJOXcf4k+SrjTzZhHNcRXFedte73rwyzktRw9yDKO+iamcwcxeSJ/uy2k2CP4bY0RhbjvY4CEC8+fir9OJ179LWt85g/eEsxMnKFaDQNwtyUog0xQ55qC68L4bZyUWink1op31MpAEpY8suxZ4L/lwatoxh2iAuRjljapFMrXo/0Fmit148ztbmI1kp/c//bJ+pEAKXgeRUb+YdW/fXrUcU3SXgts7rbWTpkhpxlGVg5ati9hceACWa56V7oimVCg8rqaM9rebI1RDRmv78iy3W2ot7iOY8hWVHalYTCtJMoNmOlva1cnyyFP3iZZBzQZneLNMxE7U7QWu49ThJHTdWsjkpy19Wb4Hm2b5P+xfvJHoWwMd16O9rsWGb2xAL1S6e3eMyvPhL/Kc/oJl4=
+notifications:
+  email:
+    on_failure: always

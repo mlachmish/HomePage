@@ -7,18 +7,15 @@ node_js:
 - 5.1.0
 before_install:
 - npm i -g npm@^3.0.0
-#- npm i -g firebase-tools
 before_script:
 - npm prune
 script:
 - npm run build
 after_success:
-#- firebase deploy --token ${FIREBASE_TOKEN} --project ${FIREBASE_PROJECT}
-- cd dist
 deploy:
   provider: heroku
   api_key:
-    - secure: I79aBY0NNpeVp1dxqXE32VYQ7fuBQW+Tn3Q1az6S9oFkUphoJuUB85RLNp8E6qjcQ3opiooSH9L/4ILYWmShOQpeAqmkaH529Ia6YS0W8VrFA1wN/3Nr/xc6PGE5wOl1s1DIeqMYKlqbT2s/pBXYqIHfJFnzyVgV9RcYI1wdo5lY6+h0XCsv9IIqBkRZjM06nolE+c/tr/m5K5RfTAj5h0I5gF0ogAuGK+EjEzfxDDsXWFNqINpefTeQav+BiJQsmeV8SM1ZAEJsmeygRGXRlaH8cUVp3CzKsOq8oXmvQFn/Aa0zpZeb6GleJTrTk3cN/1hbRRFILVJNac/gqJ4JgRa1U06mInDX4jcqEIb8P4AH8PxSWCnhe1wJ9mRJKqLDr1QDO+Mz5l7cy7wZsYrRgstT8e0No0BfXAJVv7bwM1XD9opflmk39KZDq4xIGBPUmUnqgUMLDqtqAHjO7KQnBEIEvNm9ul2srQkuAl53bdd9AzdnLy0qcJk80M09YjResSfUggb7KCLekINChTEk5mQiFvoIc66Nr6awC1xA/bOIyZ2EANvOrevXIcZNM4s9adAoP8zBTAEsSA4nEbVHNhL312uG/yKlMTETaWwq2K2NcYc75kqrSGMVanWsYl2o/XKfPJvMs9fnV0+Q4a3aKRJkITAaxp3rD3WxPoWzky4=
+    secure: esEadT8QL/GWDrltqi6/d4e3BLR4mUHu9U+dgmNz9hsSiYH2eM9us55hRdOpQOZI/ROTGMbOdXNKSpiiK7Mn0/SHNCbN23wriOd0V1c2kfFgudHlXq8ADdrPZS/VNS4L0sBiVo5X/+LTOKAgKbmyk/xQ0w8GciAvHWLr26+sESzZ6i4dRrXJaRLA+td58v6FR5mRV1TqLa3fd5jeSAfKWGF2CncacTyx25M0/Eaio1/MwPVE/IIs7XGTtu+1eT7LQqLIcO30Fd8JBHn7hW+6sYg7gI1I40i9Q7Z6paHvd6H5o/IMidHfsB4BFm1qIOlANfnlFCDkfhQl6PQQBEhHBtB3s9gRioSGiCrHr1aeFmnsw/BDdcxkMaUT0scjQcVJnSCiz0LgrvjeqI6zyQ3Rj/gW2hEabQPsiU/1/G4EjgCNfb0FiahDg2WcXtV99spjSrOt1allukkYuu9xackF5Gzt2bDZ2a244V06fm+vXrVLnxwPD5/bjo0uS2sMnM7CrK7atONAb9nr1fi1i1cNyJOgEKPVkHkZ0Tc2JwyxsOq9cCt/7ES54wRWToK1fE5jRmRbA3yjrgzXqCsSbbFBrx6UIor7sjVphoWq9yVQ8sJSl9jhF2XTPNZjZdMTHpdBYvaTUUCDhiinVRvOBx8qFjA5WlMDx3wlujGSguGCqKc=
     app: thebigfatninja-homepage
 notifications:
   email:

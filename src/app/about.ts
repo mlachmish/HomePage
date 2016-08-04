@@ -11,7 +11,7 @@ import {Component} from '@angular/core';
 export class About {
 
     openCV() {
-        var win = window.open('https://firebasestorage.googleapis.com/v0/b/homepage-bd6f3.appspot.com/o/Matan%20Lachmish%20-%20CV.pdf?alt=media&token=eed63f35-aff7-4a16-9ca2-c3c2d012e43f', '_blank');
+        var win = window.open('https://www.dropbox.com/s/osvffe3pr47xfi5/Matan%20Lachmish%20-%20CV.pdf', '_blank');
         win.focus();
     }
 

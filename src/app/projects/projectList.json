@@ -8,10 +8,18 @@
     "link": "https://github.com/mlachmish/Cryptography"
   },
   {
+    "key": "bit",
+    "title": "Bit",
+    "logo": "../img/projects/Bit.png",
+    "text": "Super light Bit operation library in Swift.",
+    "tag": "Swift",
+    "link": "https://github.com/mlachmish/Bit"
+  },
+  {
     "key": "tsobounder",
     "title": "TSOBOunder",
     "logo": "../img/projects/TSOBounder.png",
-    "text": "Reaserch on a way to bound the CPU's store buffer size.",
+    "text": "Academic research on a way to bound the CPU's store buffer size.",
     "tag": "Python",
     "link": "https://github.com/mlachmish/TSOBounder"
   },

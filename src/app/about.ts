@@ -11,7 +11,7 @@ import {Component} from '@angular/core';
 export class About {
 
     openCV() {
-        var win = window.open('https://www.dropbox.com/s/osvffe3pr47xfi5/Matan%20Lachmish%20-%20CV.pdf', '_blank');
+        var win = window.open('https://www.dropbox.com/s/psk38lqq5ei5oyf/MatanLachmishResume.pdf', '_blank');
         win.focus();
     }
 

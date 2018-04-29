@@ -11,8 +11,11 @@ export class Title {
     private githubLogoWhite: string = '../img/social/white/github-logo.png';
     private githubLogoColor: string = '../img/social/color/github-logo.png';
 
-    private stackoverflowWhite: string = '../img/social/white/stackoverflow-logo.png'
-    private stackoverflowColor: string = '../img/social/color/stackoverflow-logo.png'
+    private stackoverflowWhite: string = '../img/social/white/stackoverflow-logo.png';
+    private stackoverflowColor: string = '../img/social/color/stackoverflow-logo.png';
+
+    private mediumWhite: string = '../img/social/white/medium-logo.png';
+    private mediumColor: string = '../img/social/color/medium-logo.png';
 
     private facebookLogoWhite: string = '../img/social/white/facebook-logo.png';
     private facebookLogoColor: string = '../img/social/color/facebook-logo.png';
@@ -23,6 +26,7 @@ export class Title {
     public linkedinLogo: string = this.linkedinLogoWhite;
     public githubLogo: string = this.githubLogoWhite;
     public stackoverflowLogo: string = this.stackoverflowWhite;
+    public mediumLogo: string = this.mediumWhite;
     public facebookLogo: string = this.facebookLogoWhite;
     public twitterLogo: string = this.twitterLogoWhite;
 
@@ -45,6 +49,13 @@ export class Title {
     };
     private mouseOutStackoverflow() {
         this.stackoverflowLogo = this.stackoverflowWhite;
+    };
+
+    private mouseOverMedium() {
+        this.mediumLogo = this.mediumColor;
+    };
+    private mouseOutMedium() {
+        this.mediumLogo = this.mediumWhite;
     };
 
     private mouseOverFacebook() {
